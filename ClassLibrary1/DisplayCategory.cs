@@ -53,7 +53,7 @@ namespace ClassLibrary1
         public void GetCategory(int value)
         {
             var previous = 0;
-            var categoryname = "";
+            var categoryname = string.Empty;
             foreach (Category enumValue in (Category[])Enum.GetValues(typeof(Category)))
             {
                 if ((value >= previous) && (value <= ((int)enumValue)))
